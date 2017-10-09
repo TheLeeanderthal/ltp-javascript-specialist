@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Where to Put Javascript</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Javascript Specialist Course Documents">
+        <meta name="author" content="Christopher Lee">
+        
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- <style></style> -->
+        <!-- <script src="custom_actions.js"></script> -->        
+        <script>
+            window.onload = function()
+            {
+                document.getElementById('myButton1').addEventListener('click', respond);  
+            }
+
+            function respond(e)
+            {
+            alert('Thanks for clicking');
+            }
+        </script>
+        <script src="custom_actions.js"></script>
+        
+    </head>
+    <body>
+        <h1>The quick brown fox jumped over the lazy dogs (internal javascript)</h1>
+        <button id="myButton1">Click Me</button>
+        
+        <h1>The quick brown fox jumped over the lazy dogs (inline javascript) This technique is not recommended.</h1>
+        <button onclick="alert('Thanks for clicking!')">Click Me</button>
+        
+        <h1>The quick brown fox jumped over the lazy dogs (external javascript) This is the recommended method.</h1>
+        <button id="myButton2">Click Me</button>
+    </body>
+</html>

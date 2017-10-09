@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Output to Browser</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Javascript Specialist Course Documents">
+        <meta name="author" content="Christopher Lee">
+        <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+        <!-- <style></style> -->
+        <!-- <script src="custom_actions.js"></script> --> 
+        <script>
+            //document.write("Hello!!!");
+            window.onload=function()
+            {
+                document.getElementById('myButton').addEventListener('click', respond);
+                /*document.getElementById('one').innerHTML='<h1>Welcome to "My World"</h1>';
+                document.getElementById('two').innerHTML='<h1>Javascript Specialist Course</h1>';*/
+            }
+            
+            function respond(e)
+            {
+                document.getElementById('one').innerHTML += "<h1>Welcome to Mark's World</h1>";
+                document.getElementById('two').innerHTML += "<h2>Javascript Specialist Course</h2>";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="one">This is Div One: </div>
+        <div id="two">This is Div Two: </div>
+        <button id="myButton">Press Me</button>
+    </body>
+</html>

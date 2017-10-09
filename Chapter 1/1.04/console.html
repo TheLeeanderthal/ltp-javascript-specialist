@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Console</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Javascript Specialist Course Documents">
+        <meta name="author" content="Christopher Lee">
+        <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+        <!-- <style></style> -->
+        <!-- <script src="custom_actions.js"></script> --> 
+        <script>
+            var clicks = 0;
+            
+            window.onload = function()
+            {
+                //console.log('window.onload run...');
+                document.getElementById('myButton').addEventListener('click', respond);
+            }
+            
+            function respond(e)
+            {
+                clicks++;
+                console.log('Button Pressed ' + clicks + ' times.');
+            }
+        </script>
+    </head>
+    <body>
+        
+        <button id="myButton">Press Me</button>
+        
+    </body>
+</html>

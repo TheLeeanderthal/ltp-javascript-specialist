@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>window.onload function</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Javascript Specialist Course Documents">
+        <meta name="author" content="Christopher Lee">
+        <!-- <style></style> -->
+        <!-- <script src="custom_actions.js"></script> --> 
+        <script>
+            window.onload = function()
+            { 
+                document.getElementById('myButton').addEventListener('click', respond);
+            }
+
+            /*window.onclick = function()
+            {
+                alert("Thanks for clicking the window");
+            }*/
+
+            function respond(e)
+            {
+                alert("Hi!  You pressed me");
+            }
+        </script>
+        
+    </head>
+    <body>
+        
+        <button id="myButton">Press Me</button>
+        
+    </body>
+</html>

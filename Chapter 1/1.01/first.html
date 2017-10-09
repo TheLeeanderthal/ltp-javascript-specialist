@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First JavascriptDocument Title</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Javascript Specialist Course Documents">
+        <meta name="author" content="Christopher Lee">
+        
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- <style></style> -->
+        <!-- <script src="custom_actions.js"></script> -->
+        <script>
+            window.onload = function()
+            {
+                document.getElementById('touchTarget').addEventListener('click', respond);
+            }
+    
+            /*function respond(e)
+            {
+                alert("You clicked me!");     
+            }*/
+    
+            function respond(e)
+            {   
+            document.getElementById('touchTarget').style.width = "400px";  
+            }
+        </script>
+        
+    </head>
+    <body>
+        
+        <div id="touchTarget"><h1>Touch Me!</h1></div>
+        
+    </body>
+</html>
