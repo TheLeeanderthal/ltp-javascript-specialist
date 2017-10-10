@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Javascript Specialist Course Documents">
+        <meta name="author" content="Christopher Lee">
+        <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+        <!-- <style></style> -->
+        <!-- <script src="main.js"></script> --> 
+    <script>
+        var age;    //Public or script scope 
+        
+
+        window.onload = function()
+        {
+            var score;  //Declaration (Function Scope)
+            score = 1000;   //Initialize
+            age = 42;   //Combined declaration and initailization
+            out();
+        }
+
+        function out()
+        {
+           document.getElementById('result').innerHTML = "Age: " + age; 
+        }
+    </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>
