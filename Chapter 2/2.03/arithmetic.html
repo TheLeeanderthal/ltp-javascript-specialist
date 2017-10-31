@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math with Variables</title>
+    <script>
+        window.onload= function()
+        {
+            var operand1 = 1235;
+            var operand2 = 854.2;
+            var operand3 = 15;
+            var out = "";
+
+            out += "Addition: " + (operand1 + operand2) + "<br/>";
+            
+            out += "<br/>Subtraction: " + (operand1 - operand2) + "<br/>";
+            
+            out += "<br/>Multiplication: " + (operand1 * operand2) + "<br/>";
+            
+            out += "<br/>Division: " + (operand1 / operand2) + "<br/>";
+            
+            out += "<br/>Mod: " + (11 % 3) + "<br/>"; //the remainder vafter dividing 2 numbers.
+            
+            out += "<br/>Even: " + (12 % 2) + "<br/>"; //Mod by 2 to find out if a value is odd or even. 0=even 1=odd
+            
+            out += "<br/>Odd: " + (13 % 2) + "<br/>";
+            
+            //out += "<br/>++:" + (++operand3) + "<br/>"; //Add 1 to variable then evaluate.
+            
+            out += "<br/>++:" + (operand3++) + "<br/>";
+            
+            out += "<br/>++:" + (operand3) + "<br/>";
+            
+            out += "<br/>--" + (--operand3) + "<br/>"; //Subtract 1 to variable then evaluate.
+            
+            out += "<br/>+=3 " + (operand3 += 3) + "<br/>";
+            
+            out += "<br/>-=3 " + (operand3 -= 3) + "<br/>";
+            
+            out += "<br/>*=3 " + (operand3 *= 3) + "<br/>";
+            document.getElementById('result').innerHTML = out;
+            
+        }
+    </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>

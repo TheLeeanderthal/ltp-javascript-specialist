@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Javascript Specialist Course Documents">
+        <meta name="author" content="Christopher Lee">
+
+        <script>
+        var age; //Public or script scope
+            
+        window.onload = function()
+            {
+                var score; //Declaration
+                score = 1000; //Initialization
+                age = 42
+                //var age = 42; //Combined Declaration and Initialization
+
+                document.getElementById('result').innerHTML = score;
+                document.getElementById('result2').innerHTML = "Age: " + age;
+                out();
+            }
+        
+        function out()
+            {
+                document.getElementById('result3').innerHTML = "Age: " + age;
+            }
+        
+        </script>
+        
+    </head>
+    <body>
+        
+        <div id="result"></div>
+        <div id="result2"></div>
+        <div id="result3"></div>
+        
+        
+    </body>
+</html>
